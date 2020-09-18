@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace=绑定一个对应的Dao接口 -->
+<mapper namespace="com.cmkj.the_link_of_threescreen.dao.Thelinkofthreescreenuploadbtn3Dao">
+
+    <!--    文件信息录入-->
+    <insert id="saveFile" parameterType="Thelinkofthreescreenuploadbtn3">
+        insert into thelinkofthreescreenuploadbtn3 (secondmenu,leftscreenminiimg,leftscreenvideo,leftscreencontext,rightscreenurl,lujing)
+        values (#{secondmenu},#{leftscreenminiimg},#{leftscreenvideo},#{leftscreencontext},#{rightscreenurl},#{lujing});
+    </insert>
+
+</mapper>
